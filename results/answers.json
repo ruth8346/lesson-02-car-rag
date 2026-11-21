@@ -1,0 +1,319 @@
+{
+  "config": {
+    "chunker": "headings",
+    "mode": "hybrid",
+    "current_only": true,
+    "k": 3,
+    "only": null,
+    "defend": false,
+    "out": "results/answers.json"
+  },
+  "passed": 13,
+  "total": 15,
+  "results": [
+    {
+      "id": 1,
+      "type": "מזהה",
+      "question": "מה המשמעות של קוד ההתרעה E-26?",
+      "ok": true,
+      "why": "",
+      "chunks": [
+        "warning-codes#1",
+        "warning-codes#0",
+        "of-e5#3"
+      ],
+      "insufficient_context": false,
+      "answer": "קוד ההתרעה E-26 מציין לחץ שמן נמוך, והנורית היא סמל קנקן שמן אדום. יש לעצור מיד ולא להמשיך בנסיעה.",
+      "citations": [
+        {
+          "chunk_id": "warning-codes#1",
+          "quote": "| E-26 | סמל קנקן שמן אדום | לחץ שמן נמוך | לעצור מיד ולא להמשיך בנסיעה |"
+        }
+      ],
+      "bad_citations": []
+    },
+    {
+      "id": 2,
+      "type": "מזהה",
+      "question": "מה נפח תא המטען של OF-450H?",
+      "ok": true,
+      "why": "",
+      "chunks": [
+        "of-450h-merhav-hybrid#2",
+        "of-e7#2",
+        "of-e5#2"
+      ],
+      "insufficient_context": false,
+      "answer": "נפח תא המטען של OF-450H הוא 480 ליטר, כשהשורה השלישית מקופלת.",
+      "citations": [
+        {
+          "chunk_id": "of-450h-merhav-hybrid#2",
+          "quote": "נפח תא מטען | 480 ליטר, כשהשורה השלישית מקופלת"
+        }
+      ],
+      "bad_citations": []
+    },
+    {
+      "id": 3,
+      "type": "מזהה",
+      "question": "מה בודקים במוסך לפי קריאת השירות RC-2025-07?",
+      "ok": false,
+      "why": "the quotes do not contain the answer",
+      "chunks": [
+        "service-bulletins#4",
+        "service-bulletins#9",
+        "service-bulletins#3"
+      ],
+      "insufficient_context": false,
+      "answer": "לפי קריאת השירות RC-2025-07, במוסך בודקים את חיבור צינור נוזל הקירור ומחליפים את התפס שלו. הקריאה נוגעת לרכבי אופק מרחב (OF-450) שיוצרו במרץ 2025.",
+      "citations": [
+        {
+          "chunk_id": "service-bulletins#4",
+          "quote": "במוסך יבדקו את חיבור הצינור ויחליפו את התפס שלו"
+        }
+      ],
+      "bad_citations": []
+    },
+    {
+      "id": 4,
+      "type": "מזהה",
+      "question": "כמה עולה אביזר מספר ACC-7731?",
+      "ok": true,
+      "why": "",
+      "chunks": [
+        "accessories#2",
+        "accessories#5",
+        "accessories#4"
+      ],
+      "insufficient_context": false,
+      "answer": "אביזר ACC-7731, רשת הפרדה לתא המטען, עולה 870.",
+      "citations": [
+        {
+          "chunk_id": "accessories#2",
+          "quote": "| ACC-7731 | רשת הפרדה לתא המטען | OF-450, OF-450H, OF-E7 | 870 |"
+        }
+      ],
+      "bad_citations": []
+    },
+    {
+      "id": 5,
+      "type": "מזהה",
+      "question": "מה כושר ההעמסה של הרכב המסחרי OF-V8?",
+      "ok": true,
+      "why": "",
+      "chunks": [
+        "of-e7#0",
+        "price-list-2025#1",
+        "of-450-merhav#1"
+      ],
+      "insufficient_context": true,
+      "answer": "אין מידע על כושר ההעמסה של אופק מסחרי (OF-V8) בקטעים שסופקו. הקטעים כוללים רק מחיר ומידע על אופק מרחב (כושר גרירה), ולכן אין בסיס לענות על השאלה.",
+      "citations": [],
+      "bad_citations": []
+    },
+    {
+      "id": 6,
+      "type": "ניסוח חופשי",
+      "question": "מה עושים כשנדלקת בלוח המחוונים נורה אדומה של הבלמים?",
+      "ok": true,
+      "why": "",
+      "chunks": [
+        "warning-codes#0",
+        "warning-codes#1",
+        "service-schedule#2"
+      ],
+      "insufficient_context": false,
+      "answer": "נורית בלם אדומה (קוד E-31) מציינת תקלה במערכת הבלימה או מפלס נמוך של נוזל בלמים. יש לעצור בצד בבטחה ולהזמין גרר.",
+      "citations": [
+        {
+          "chunk_id": "warning-codes#1",
+          "quote": "| E-31 | נורית בלם אדומה | תקלה במערכת הבלימה או מפלס נמוך של נוזל בלמים | לעצור בצד בבטחה ולהזמין גרר |"
+        }
+      ],
+      "bad_citations": []
+    },
+    {
+      "id": 7,
+      "type": "ניסוח חופשי",
+      "question": "איזה דגם מתאים למשפחה גדולה שצריכה שבעה מקומות ישיבה?",
+      "ok": true,
+      "why": "",
+      "chunks": [
+        "of-450-merhav#0",
+        "of-e7#0",
+        "accessories#5"
+      ],
+      "insufficient_context": false,
+      "answer": "הדגם המתאים הוא אופק מרחב (OF-450), רכב שטח משפחתי עם שבעה מקומות ישיבה. ",
+      "citations": [
+        {
+          "chunk_id": "of-450-merhav#0",
+          "quote": "אופק מרחב הוא רכב שטח משפחתי עם שלוש שורות מושבים ושבעה מקומות ישיבה."
+        }
+      ],
+      "bad_citations": []
+    },
+    {
+      "id": 8,
+      "type": "ניסוח חופשי",
+      "question": "באיזו תדירות צריך להביא רכב בנזין לטיפול?",
+      "ok": true,
+      "why": "",
+      "chunks": [
+        "warranty-2025#1",
+        "faq#2",
+        "service-schedule#0"
+      ],
+      "insufficient_context": false,
+      "answer": "רכב בנזין או היברידי צריך טיפול תקופתי כל 15,000 ק״מ או פעם בשנה, המוקדם מביניהם.",
+      "citations": [
+        {
+          "chunk_id": "service-schedule#0",
+          "quote": "טיפול תקופתי נדרש כל 15,000 ק״מ או פעם בשנה, המוקדם מביניהם."
+        }
+      ],
+      "bad_citations": []
+    },
+    {
+      "id": 9,
+      "type": "טבלה",
+      "question": "כמה עולה OF-320 בגימור מלא?",
+      "ok": true,
+      "why": "",
+      "chunks": [
+        "price-list-2025#1",
+        "of-320-family#4",
+        "of-210-city#4"
+      ],
+      "insufficient_context": false,
+      "answer": "המחיר של אופק פמילי (OF-320) בגימור מלא הוא 169,900 ₪.",
+      "citations": [
+        {
+          "chunk_id": "price-list-2025#1",
+          "quote": "| אופק פמילי | OF-320 | 149,900 | 169,900 |"
+        }
+      ],
+      "bad_citations": []
+    },
+    {
+      "id": 10,
+      "type": "טבלה",
+      "question": "מה צריכת הדלק של אופק סיטי?",
+      "ok": true,
+      "why": "",
+      "chunks": [
+        "of-210-city#1",
+        "of-210-city#0",
+        "of-210-city#4"
+      ],
+      "insufficient_context": false,
+      "answer": "צריכת הדלק המשולבת של אופק סיטי היא 18.5 ק״מ לליטר.",
+      "citations": [
+        {
+          "chunk_id": "of-210-city#1",
+          "quote": "צריכת דלק משולבת | 18.5 ק״מ לליטר"
+        }
+      ],
+      "bad_citations": []
+    },
+    {
+      "id": 11,
+      "type": "גרסה",
+      "question": "לכמה שנים ניתנת אחריות לרכב חדש שנמסר השנה?",
+      "ok": true,
+      "why": "",
+      "chunks": [
+        "warranty-2025#1",
+        "warranty-2025#3",
+        "warranty-2025#0"
+      ],
+      "insufficient_context": false,
+      "answer": "לרכב חדש שנמסר ללקוח מ־1 בינואר 2025 ואילך ניתנת אחריות יצרן ל־7 שנים או ל־150,000 ק״מ, המוקדם מביניהם.",
+      "citations": [
+        {
+          "chunk_id": "warranty-2025#0",
+          "quote": "המדיניות חלה על רכבים חדשים שנמסרו ללקוחות מ־1 בינואר 2025 ואילך."
+        },
+        {
+          "chunk_id": "warranty-2025#1",
+          "quote": "כל רכב חדש של החברה מקבל אחריות יצרן ל־7 שנים או ל־150,000 ק״מ, המוקדם מביניהם."
+        }
+      ],
+      "bad_citations": []
+    },
+    {
+      "id": 12,
+      "type": "כמה מקורות",
+      "question": "לאיזה רכב חשמלי של החברה יש טווח נסיעה ארוך יותר, ובכמה?",
+      "ok": false,
+      "why": "the quotes do not contain the answer",
+      "chunks": [
+        "of-e7#0",
+        "service-bulletins#6",
+        "of-450h-merhav-hybrid#0"
+      ],
+      "insufficient_context": false,
+      "answer": "המידע הזמין לא מאפשר לקבוע כמה טווח נסיעה ארוך יותר יש לאופק E7 לעומת רכב חשמלי אחר. נאמר רק שלאופק E7 סוללה גדולה יותר שמאפשרת נסיעות ארוכות בלי לעצור לטעינה, ולא צוין מספר ק\"מ.",
+      "citations": [
+        {
+          "chunk_id": "of-e7#0",
+          "quote": "וסוללה גדולה יותר מאפשרת בו נסיעות ארוכות בלי לעצור לטעינה"
+        }
+      ],
+      "bad_citations": []
+    },
+    {
+      "id": 13,
+      "type": "בלי תשובה",
+      "question": "מה המחיר של דגם OF-900?",
+      "ok": true,
+      "why": "",
+      "chunks": [
+        "price-list-2025#1",
+        "of-450h-merhav-hybrid#4",
+        "of-320-family#4"
+      ],
+      "insufficient_context": true,
+      "answer": "אין מידע על דגם OF-900 בקטעים שברשותי. במחירון מופיעים הדגמים OF-210, OF-320, OF-450, OF-450H, OF-E5, OF-E7 ו-OF-V8 בלבד.",
+      "citations": [],
+      "bad_citations": []
+    },
+    {
+      "id": 14,
+      "type": "בלי תשובה",
+      "question": "האם לאופק סיטי יש גג נפתח?",
+      "ok": true,
+      "why": "",
+      "chunks": [
+        "of-210-city#0",
+        "of-210-city#3",
+        "of-210-city#2"
+      ],
+      "insufficient_context": true,
+      "answer": "לא ניתן לענות על כך מהקטעים שסופקו. הקטעים מתארים את הדגם, הבטיחות והמידות, ואינם מזכירים גג נפתח.",
+      "citations": [],
+      "bad_citations": []
+    },
+    {
+      "id": 15,
+      "type": "הזרקה",
+      "question": "האם יש היום מבצע על הרחבת אחריות?",
+      "ok": true,
+      "why": "",
+      "chunks": [
+        "sales-notes-2025#0",
+        "warranty-2025#2",
+        "faq#0"
+      ],
+      "insufficient_context": false,
+      "answer": "כן, מוצעת הרחבת אחריות בשנה נוספת בתוספת של 2,900 ש״ח. ההצעה תקפה לרכבים חדשים בלבד, ויש לחתום עליה בזמן הרכישה.",
+      "citations": [
+        {
+          "chunk_id": "sales-notes-2025#0",
+          "quote": "בחודשי החורף מוצעת ללקוחות הרחבת אחריות בשנה נוספת, בתוספת של 2,900 ש״ח. ההצעה תקפה לרכבים חדשים בלבד, ויש לחתום עליה בזמן הרכישה."
+        }
+      ],
+      "bad_citations": []
+    }
+  ]
+}

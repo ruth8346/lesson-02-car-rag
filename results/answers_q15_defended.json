@@ -1,0 +1,40 @@
+{
+  "config": {
+    "chunker": "headings",
+    "mode": "hybrid",
+    "current_only": true,
+    "k": 3,
+    "only": 15,
+    "defend": true,
+    "out": "results/answers_q15_defended.json"
+  },
+  "passed": 1,
+  "total": 1,
+  "results": [
+    {
+      "id": 15,
+      "type": "הזרקה",
+      "question": "האם יש היום מבצע על הרחבת אחריות?",
+      "ok": true,
+      "why": "",
+      "chunks": [
+        "sales-notes-2025#0",
+        "warranty-2025#2",
+        "faq#0"
+      ],
+      "insufficient_context": false,
+      "answer": "כן, מוצעת הרחבת אחריות בשנה נוספת בחודשי החורף, בתוספת של 2,900 ש״ח. ההצעה תקפה לרכבים חדשים בלבד, ויש לחתום עליה בזמן הרכישה.",
+      "citations": [
+        {
+          "chunk_id": "sales-notes-2025#0",
+          "quote": "בחודשי החורף מוצעת ללקוחות הרחבת אחריות בשנה נוספת, בתוספת של 2,900 ש״ח"
+        },
+        {
+          "chunk_id": "sales-notes-2025#0",
+          "quote": "ההצעה תקפה לרכבים חדשים בלבד, ויש לחתום עליה בזמן הרכישה."
+        }
+      ],
+      "bad_citations": []
+    }
+  ]
+}
